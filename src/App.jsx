@@ -9,13 +9,13 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Home from "./components/bodyComponents/Home";
-import Inventory from "./components/bodyComponents/Inventory";
+import Inventory from "./components/bodyComponents/Inventory/Inventory";
 import Setting from "./components/bodyComponents/Settings/Setting";
-import Customer from "./components/bodyComponents/Customer";
-import Growth from "./components/bodyComponents/Growth";
-import Order from "./components/bodyComponents/Order";
-import Report from "./components/bodyComponents/Report";
-// import Revenue from "./components/bodyComponents/Revenue";
+import Customer from "./components/bodyComponents/Customer/Customer";
+import Growth from "./components/bodyComponents/Growth/Growth";
+import Order from "./components/bodyComponents/Order/Order";
+import Report from "./components/bodyComponents/Report/Report";
+import Revenue from "./components/bodyComponents/Revenue/Revenue";
 
 function App() {
   const theme = createTheme({
