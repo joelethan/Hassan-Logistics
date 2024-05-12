@@ -1,8 +1,8 @@
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
-import { Box } from "@mui/material";
 
-export default function BestSelledProductChart() {
+const BestSoldProductChart = () => {
   const [channelData, setChannelData] = useState([]);
 
   useEffect(() => {
@@ -101,4 +101,6 @@ export default function BestSelledProductChart() {
       />
     </Box>
   );
-}
+};
+
+export default BestSoldProductChart;

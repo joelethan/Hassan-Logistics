@@ -2,7 +2,7 @@
 import { Box, Paper, Typography } from "@mui/material";
 import Percentage from "./Percentage";
 
-export default function RevenueCard(props) {
+const RevenueCard = (props) => {
   const { number, percentage, upOrDown, color, title, subTitle, isMoney } =
     props.card;
 
@@ -42,4 +42,6 @@ export default function RevenueCard(props) {
       </Box>
     </Paper>
   );
-}
+};
+
+export default RevenueCard;

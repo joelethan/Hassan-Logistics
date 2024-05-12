@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { Avatar, Typography } from "@mui/material";
-import React from "react";
 //more about avatar refres to https://mui.com/material-ui/react-avatar/
-export default function Product({ productName }) {
+
+const Product = ({ productName }) => {
   return (
     <>
       <Avatar
@@ -17,4 +18,6 @@ export default function Product({ productName }) {
       </Typography>
     </>
   );
-}
+};
+
+export default Product;

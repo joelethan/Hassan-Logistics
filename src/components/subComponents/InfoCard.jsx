@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import { Card, Box, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
-export default function InfoCard({ card }) {
+const InfoCard = ({ card }) => {
   return (
     //do the routing here
     <>
@@ -43,4 +43,6 @@ export default function InfoCard({ card }) {
       </Card>
     </>
   );
-}
+};
+
+export default InfoCard;

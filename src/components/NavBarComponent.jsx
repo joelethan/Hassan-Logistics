@@ -1,29 +1,29 @@
 import {
-  Box,
-  Grid,
-  AppBar,
-  Container,
-  Typography,
-  Paper,
-  IconButton,
-  Avatar,
-  Badge,
-  Menu,
-  MenuItem,
-  Divider,
-  ListItemIcon,
-  Tooltip,
-} from "@mui/material";
-import {
+  AccountCircleOutlined,
+  Logout,
   NotificationsOutlined,
   Settings,
-  Logout,
-  AccountCircleOutlined,
 } from "@mui/icons-material";
+import {
+  AppBar,
+  Avatar,
+  Badge,
+  Box,
+  Container,
+  Divider,
+  Grid,
+  IconButton,
+  ListItemIcon,
+  Menu,
+  MenuItem,
+  Paper,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function NavBarComponent() {
+const NavBarComponent = () => {
   const navigate = useNavigate();
   const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -145,7 +145,9 @@ export default function NavBarComponent() {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default NavBarComponent;
 
 {
   /* <Grid item md={7}>

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Table,
@@ -9,7 +8,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-export default function TopSellingProduct() {
+const TopSellingProduct = () => {
   const products = [
     { name: "ASOS Ridey", price: 25.05, quantity: 73, amount: 1.828 },
     {
@@ -61,4 +60,6 @@ export default function TopSellingProduct() {
       </TableContainer>
     </Box>
   );
-}
+};
+
+export default TopSellingProduct;

@@ -1,8 +1,7 @@
 import { Box } from "@mui/material";
-import React from "react";
 import ApexCharts from "react-apexcharts";
 
-export default function TotalSales() {
+const TotalSales = () => {
   const options = {
     title: {
       text: "Totale Sales",
@@ -93,4 +92,6 @@ export default function TotalSales() {
       />
     </Box>
   );
-}
+};
+
+export default TotalSales;

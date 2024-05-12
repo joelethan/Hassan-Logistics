@@ -4,13 +4,11 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableHead,
   TableRow,
-  Typography,
+  Typography
 } from "@mui/material";
-import React from "react";
 
-export default function Overview() {
+const Overview = () => {
   return (
     <Box>
       <TableContainer>
@@ -74,4 +72,6 @@ export default function Overview() {
       </TableContainer>
     </Box>
   );
-}
+};
+
+export default Overview;
