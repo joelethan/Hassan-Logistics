@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Inter from "../public/static/fonts/Inter.ttf";
 import RootComponent from "./components/RootComponent";
