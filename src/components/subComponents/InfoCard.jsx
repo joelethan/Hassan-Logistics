@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Card, Box, CardContent, Typography } from "@mui/material";
 
 export default function InfoCard({ card }) {

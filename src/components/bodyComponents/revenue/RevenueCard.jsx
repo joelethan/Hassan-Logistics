@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { Box, Paper, Typography } from "@mui/material";
-import React from "react";
 import Percentage from "./Percentage";
 
 export default function RevenueCard(props) {
