@@ -1,10 +1,9 @@
-import React from "react";
-import NavBarComponent from "./NavBarComponent";
 import { Box, Grid } from "@mui/material";
-import SideBarComponent from "./SideBarComponent";
 import { Outlet } from "react-router-dom";
+import NavBarComponent from "./NavBarComponent";
+import SideBarComponent from "./SideBarComponent";
 
-export default function RootComponent() {
+const RootComponent = () => {
   return (
     <>
       <NavBarComponent />
@@ -27,4 +26,6 @@ export default function RootComponent() {
       </Box>
     </>
   );
-}
+};
+
+export default RootComponent;

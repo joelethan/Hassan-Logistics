@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
-import { Box } from "@mui/material";
 
-export default function RevenueCostChart() {
+const RevenueCostChart = () => {
   const [channelData, setChannelData] = useState([]);
 
   useEffect(() => {
@@ -104,4 +105,6 @@ export default function RevenueCostChart() {
       />
     </Box>
   );
-}
+};
+
+export default RevenueCostChart;

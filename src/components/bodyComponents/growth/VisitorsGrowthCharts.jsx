@@ -1,7 +1,8 @@
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
-import { Box } from "@mui/material";
-export default function VisitorsGrowthCharts() {
+
+const VisitorsGrowthCharts = () => {
   const [visitorData, setVisitorData] = useState([]);
 
   useEffect(() => {
@@ -82,4 +83,6 @@ export default function VisitorsGrowthCharts() {
       />
     </Box>
   );
-}
+};
+
+export default VisitorsGrowthCharts;

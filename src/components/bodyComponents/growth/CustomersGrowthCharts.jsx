@@ -1,7 +1,8 @@
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
-import { Box } from "@mui/material";
-export default function CustomersGrowthCharts() {
+
+const CustomersGrowthCharts = () => {
   const [channelData, setChannelData] = useState([]);
 
   useEffect(() => {
@@ -86,4 +87,6 @@ export default function CustomersGrowthCharts() {
       />
     </Box>
   );
-}
+};
+
+export default CustomersGrowthCharts;

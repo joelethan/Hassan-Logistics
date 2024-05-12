@@ -1,8 +1,7 @@
-import React from "react";
 import { Box } from "@mui/material";
 import ApexCharts from "react-apexcharts";
 
-export default function SalesByCity() {
+const SalesByCity = () => {
   const donutOption = {
     labels: ["Oujda", "Nador", "Berkan", "Casablanca"],
     legend: {
@@ -42,4 +41,6 @@ export default function SalesByCity() {
       />
     </Box>
   );
-}
+};
+
+export default SalesByCity;

@@ -19,7 +19,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../../public/styles/links.css";
 
-export default function SideBarComponent() {
+const SideBarComponent = () => {
   const navigate = useNavigate();
   const navigateTo = (to) => {
     navigate(to);
@@ -134,4 +134,6 @@ export default function SideBarComponent() {
 
   //     setOpen(false);
   //   };
-}
+};
+
+export default SideBarComponent;

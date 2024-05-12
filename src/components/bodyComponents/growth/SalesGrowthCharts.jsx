@@ -1,8 +1,7 @@
 import { Box } from "@mui/material";
-import React from "react";
 import ApexCharts from "react-apexcharts";
 
-export default function SalesGrowthCharts() {
+const SalesGrowthCharts = () => {
   const options = {
     chart: {
       id: "basic-bar",
@@ -80,4 +79,6 @@ export default function SalesGrowthCharts() {
       />
     </Box>
   );
-}
+};
+
+export default SalesGrowthCharts;

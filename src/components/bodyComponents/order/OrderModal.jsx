@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function OrderModal({ order }) {
+const OrderModal = ({ order }) => {
   console.log("the order lists are :\n", order.products[0].product.name);
   const handleDeleteProductFromOrder = (orderId, productId) => {
     console.log(
@@ -147,4 +147,6 @@ export default function OrderModal({ order }) {
       </Box>
     </Box>
   );
-}
+};
+
+export default OrderModal;

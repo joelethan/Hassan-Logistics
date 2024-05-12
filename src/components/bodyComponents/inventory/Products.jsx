@@ -1,9 +1,8 @@
-import { Typography } from "@mui/material";
-import React from "react";
-import Product from "./Product";
 import { DataGrid } from "@mui/x-data-grid";
+import Product from "./Product";
 import productList from "./productList";
-export default function Products() {
+
+const Products = () => {
   const columns = [
     {
       field: "id",
@@ -61,4 +60,6 @@ export default function Products() {
       />
     </div>
   );
-}
+};
+
+export default Products;

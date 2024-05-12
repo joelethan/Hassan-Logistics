@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import ApexCharts from "react-apexcharts";
-import { Box } from "@mui/material";
-export default function Channels() {
+
+const Channels = () => {
   //   const total = data.reduce((sum, value) => sum + value, 0);
   // const percentages = data.map(value => ((value / total) * 100).toFixed(2) + '%');
   const [channelData, setChannelData] = useState([]);
@@ -92,4 +94,6 @@ export default function Channels() {
       />
     </Box>
   );
-}
+};
+
+export default Channels;

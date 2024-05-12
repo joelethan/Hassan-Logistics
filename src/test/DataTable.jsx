@@ -1,6 +1,5 @@
-import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
 import { Typography } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -11,8 +10,8 @@ const columns = [
     headerName: "avatar",
     width: 130,
     //same here we have the cell data which i will get the value of the cells in the tables cellData.row.fieldName
-    renderCell: (cellData) => {
-      return <Typography variant="h5">Hello</Typography>;
+    renderCell: ({ text = "Hello" }) => {
+      return <Typography variant="h5">{text}</Typography>;
     },
   },
   {
@@ -50,7 +49,8 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 //for images refres to https://mui.com/material-ui/react-image-list/
-export default function DataTable() {
+
+const DataTable = () => {
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid
@@ -66,4 +66,6 @@ export default function DataTable() {
       />
     </div>
   );
-}
+};
+
+export default DataTable;

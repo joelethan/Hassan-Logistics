@@ -1,5 +1,5 @@
-import React from "react";
-
-export default function RootPage() {
+const RootPage = () => {
   return <div>RootPage</div>;
-}
+};
+
+export default RootPage;

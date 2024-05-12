@@ -1,5 +1,5 @@
-import React from "react";
-
-export default function Hello() {
+const Hello = () => {
   return <div>Hello</div>;
-}
+};
+
+export default Hello;
