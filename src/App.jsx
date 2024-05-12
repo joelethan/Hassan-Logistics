@@ -8,14 +8,14 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Home from "./components/bodyComponents/Home";
-import Inventory from "./components/bodyComponents/Inventory/Inventory";
-import Setting from "./components/bodyComponents/Settings/Setting";
-import Customer from "./components/bodyComponents/Customer/Customer";
-import Growth from "./components/bodyComponents/Growth/Growth";
-import Order from "./components/bodyComponents/Order/Order";
-import Report from "./components/bodyComponents/Report/Report";
-import Revenue from "./components/bodyComponents/Revenue/Revenue";
+import Home from "src/components/bodyComponents/Home/Home";
+import Inventory from "src/components/bodyComponents/Inventory/Inventory";
+import Setting from "src/components/bodyComponents/Settings/Setting";
+import Customer from "src/components/bodyComponents/Customer/Customer";
+import Growth from "src/components/bodyComponents/Growth/Growth";
+import Order from "src/components/bodyComponents/Order/Order";
+import Report from "src/components/bodyComponents/Report/Report";
+import Revenue from "src/components/bodyComponents/Revenue/Revenue";
 
 function App() {
   const theme = createTheme({
