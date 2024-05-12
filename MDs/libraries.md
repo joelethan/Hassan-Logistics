@@ -32,7 +32,7 @@ https://mui.com/material-ui/material-icons
 
 <pre>
  - https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md
- - It uses <a href="https://babeljs.io/">Babel</a> for Fast Refresh
+ - It uses <a href="https://babeljs.io">Babel</a> for Fast Refresh
 </pre>
 
 - ### React SWC Plugin
