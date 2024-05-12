@@ -1,13 +1,13 @@
+import { Box, Grid } from "@mui/material";
 import { Component } from "react";
-import { Box, Grid, Paper } from "@mui/material";
-import RevenueCard from "../revenue/RevenueCard";
-import VisitorsGrowthCharts from "./VisitorsGrowthCharts";
-import ProductsGrowthCharts from "./ProductsGrowthCharts";
+import RevenueCard from "../Revenue/RevenueCard";
 import CustomersGrowthCharts from "./CustomersGrowthCharts";
+import ProductsGrowthCharts from "./ProductsGrowthCharts";
 import SalesGrowthCharts from "./SalesGrowthCharts";
+import VisitorsGrowthCharts from "./VisitorsGrowthCharts";
 export default class Growth extends Component {
   render() {
-    const revenuCards = [
+    const revenueItems = [
       {
         isMoney: false,
         number: "330",
@@ -47,8 +47,8 @@ export default class Growth extends Component {
     return (
       <Box sx={{ p: 3, mx: 3 }}>
         <Grid container sx={{ mx: 4 }}>
-          {revenuCards.map((card) => (
-            <Grid item md={3}>
+          {revenueItems.map((card, index) => (
+            <Grid item md={3} key={index}>
               <Box m={4}>
                 <RevenueCard card={card} />
               </Box>

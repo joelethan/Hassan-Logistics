@@ -1,4 +1,5 @@
-import { Delete, DeleteOutline } from "@mui/icons-material";
+/* eslint-disable react/prop-types */
+import { DeleteOutline } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -12,7 +13,6 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
 
 export default function OrderModal({ order }) {
   console.log("the order lists are :\n", order.products[0].product.name);
