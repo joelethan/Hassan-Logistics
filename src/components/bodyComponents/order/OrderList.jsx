@@ -58,10 +58,7 @@ export default class OrderList extends Component {
         headerName: "Total Amount",
         width: 300,
         description: "total amount of the order",
-        valueGetter: (params) => {
-          const total = 300;
-          return total;
-        },
+        valueGetter: ({ total = 300 }) => total,
       },
       {
         field: "details",

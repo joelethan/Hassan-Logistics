@@ -1,4 +1,4 @@
-import productList from "../inventory/productList";
+import productList from "../Inventory/productList";
 
 const customer = {
     firstName: "ADMI",
